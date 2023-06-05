@@ -1,0 +1,511 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif ;
+}
+
+.nav {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 6.5rem;
+    background: #222;
+    z-index: 100000;
+}
+
+.nav h2{
+    color: #fff;
+    font-size: 1.7rem;
+}
+
+#item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#item li{
+    list-style: none;
+    padding-right: 50px;
+}
+
+#item li a:hover , #item .icon i:hover {
+    color: #ff5733;
+    cursor: pointer;
+}
+
+#item li a {
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+#item .icon i {
+    color: #fff;
+    padding-right: 30px;
+    font-weight: bolder;
+}
+
+.back{
+    background-image: url(images/bg.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    z-index: -1;
+}
+
+.back .overlay {
+    background: #171819;
+    width: 100%;
+    height: 100%;
+    opacity: 0.85;
+}
+
+.mid {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.mid p {
+    color: #7f8c8d;
+    font-size: 1.3rem;
+    margin-bottom: 1.4rem;
+}
+
+.mid h2{
+    color: #fff;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.mid .btn {
+    margin-top: 2rem;
+}
+
+.mid .btn  a{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.mid .btn  a.simple{
+    color: #fff;
+    font-weight: 500;
+    padding: 0.9rem 1.6rem   
+}
+
+.mid .btn  a.simple:hover{
+    color: #ff5733;
+}
+
+.mid .btn a.border:hover{
+    background: #fff;
+    border: 1px solid #fff;
+}
+
+.mid .btn  a.border{
+    color: #ff5733;
+    border: 1px solid #ff5733;
+    font-weight: 500;
+    padding: 0.9rem 1.6rem;
+    border-radius: 3px;
+}
+
+.details{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8rem 15rem;
+    background-color: #171819;
+}
+
+.details h3,h6,h5{
+    color: #fff;
+}
+
+.details .one{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 45%;
+}
+
+.details .one h3{
+    font-size: 2.5rem;
+    padding-bottom: 1.1rem;
+}
+
+.details .one h6{
+    font-size: 1.3rem;
+    font-weight: 400;
+    padding-bottom: 1.2rem;
+}
+
+.details .one p{
+    color: #666262;
+    font-size: 1.2rem;
+    padding-bottom: 2rem;
+}
+
+.details .one a{
+    color: #fff;
+    background: #f13a11;
+    padding: 1rem 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.details .one a:hover{
+    background: #fff;
+    color: #f13a11;
+}
+
+.details .two{
+    width: 45%;
+    border-left: 1px solid #666262;
+    padding-left: 4rem;
+}
+
+.details .two h3{
+    font-size: 2.5rem;
+}
+
+.details .two h5{
+    font-size: 1.1rem;
+}
+
+.details .two p{
+    font-size: 1.1rem;
+    color: #666262;
+    margin-bottom: 0.8rem;
+}
+
+.trainer {
+    background: #f9f9f9;
+    padding: 8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.trainer .about{
+    width: 38%;
+}
+.trainer .about h2{
+    color: #212529;
+    font-size: 2.1rem;
+    padding-bottom: 1.8rem;
+}
+.trainer .about p{
+    color: #7f8c8d;
+    font-size: 1.1rem;
+}
+.trainer .people{
+    width: 57%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.trainer .people .team1{
+    width: 40%;
+    height: auto;
+    box-sizing: border-box;
+    background:#fff;
+    box-shadow:1.4px 1.4px 2.2px rgba(0, 0, 0, 0.011),
+    3.3px 3.4px 5.3px rgba(0, 0, 0, 0.016),
+    6.3px 6.4px 10px rgba(0, 0, 0, 0.02),
+    11.2px 11.4px 17.9px rgba(0, 0, 0, 0.024),
+    20.9px 21.3px 33.4px rgba(0, 0, 0, 0.029),
+    50px 51px 80px rgba(0, 0, 0, 0.04)
+  ;
+}
+.trainer .people .team1 .img img{
+    width: 100%;
+    object-fit: cover;
+}
+.trainer .people .team1  .name, .trainer .people .team1  .pro{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.trainer .people .team1  .name {
+    padding: 5px 20px 0 20px;
+}
+.trainer .people .team1 .teamdetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 10px;
+
+}
+
+.trainer .people .team1  .name h4{
+    color: #212529;
+    font-size: 1.5rem;
+}
+
+.trainer .people .team1  .name i, .trainer .people .team1  .pro i {
+    font-size: 1.3rem;
+    font-weight: bolder;
+    cursor: pointer;
+    color: #212529;
+}
+.trainer .people .team1 .pro{
+    padding: 0 20px 5px 20px;
+}
+.trainer .people .team1 .pro p{
+    color: #212529;
+}
+
+.class {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 7rem 8rem;
+}
+.class .paragraph{
+    font-size: 1.3rem;
+    color: #95a5a6;
+    padding-bottom: 6px;
+    text-align: center;
+}
+
+.class .h2{
+    font-size: 2.2rem;
+    color: #222;
+    font-weight: 700;
+    padding-bottom: 50px;
+    text-align: center;
+}
+.class .classMenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.class .classMenu .team1{
+    width: 32%;
+    height: auto;
+    box-sizing: border-box;
+    background:#fff;
+    box-shadow:1.4px 1.4px 2.2px rgba(0, 0, 0, 0.011),
+    3.3px 3.4px 5.3px rgba(0, 0, 0, 0.016),
+    6.3px 6.4px 10px rgba(0, 0, 0, 0.02),
+    11.2px 11.4px 17.9px rgba(0, 0, 0, 0.024),
+    20.9px 21.3px 33.4px rgba(0, 0, 0, 0.029),
+    50px 51px 80px rgba(0, 0, 0, 0.04)
+  ;
+}
+.class .classMenu .team1 .img img{
+    width: 100%;
+    object-fit: cover;
+}
+.class .classMenu .team1 .teamdetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+.class .classMenu .team1 .teamdetails .name{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 30px 0 30px;
+}
+
+.class .classMenu .team1 .teamdetails .name .nameDetails h4{
+    color: #212529;
+    font-size: 1.7rem;
+}
+
+.class .classMenu .team1 .teamdetails .name .nameDetails p{
+    color: #212529;
+    font-size: 1.1rem;
+}
+
+.class .classMenu .team1 .teamdetails .name .nameDetails p span{
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.class .classMenu .team1 .teamdetails .name .num h5{
+    font-size: 1rem;
+    background: #f13a11;
+    width: 3.5rem;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    text-align:center;
+    border-radius: 50%;
+}
+.class .classMenu .team1 .teamdetails .pro {
+    padding: 15px 30px 30px 30px;
+}
+.class .classMenu .team1 .teamdetails .pro p{
+    font-size: 1.1rem;
+    color: #666262;
+}
+
+.contact{
+    padding: 8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contact .form{
+    width: 45%;
+}
+
+.contact .form h2 {
+    font-size: 2rem;
+    color: #212529;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+.contact .form .submit{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.contact .form .submit input, .contact .form .submit textarea{
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #95a5a6;
+    outline: none;
+    margin: 13px 0;
+}
+
+.contact .form .submit input:focus, .contact .form .submit textarea:focus{
+    border: 1px solid #111;
+}
+
+.contact .form .submit input::placeholder{
+    color: #7f8c8d;
+    font-size: 1.1rem;
+}
+
+.contact .form .submit textarea::placeholder{
+    color: #7f8c8d;
+    font-size: 1.1rem;
+    height: 80%;
+}
+
+.contact .form .submit a{
+    width: 100%;
+    padding: 15px 0;
+    text-decoration: none;
+    background: #111;
+    color: #fff;
+    font-size: 1.1rem;
+    margin: 13px 0;
+    text-align: center;
+}
+
+.contact .map {
+    width: 45%;
+}
+
+.contact .map h2{
+    font-size: 2rem;
+    color: #212529;
+    padding-bottom: 10px;
+    width: 100%;
+}
+.contact .map p{
+    font-size: 1.1rem;
+    color: #212529;
+    padding-bottom: 30px;
+    width: 100%;
+}
+.contact .map p i {
+    color: red;
+}
+.contact .map iframe {
+    width: 100%;
+    height: 65%;
+}
+
+.footer {
+    border-top: 1px solid grey;
+    padding: 5rem 8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer p{
+    color: #7f8c8d;
+    justify-content: flex-start;
+}
+
+.footer p i {
+    color: red;
+    padding-right: 10px;
+}
+
+.bmi-calculator {
+    padding: 2rem 12rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .bmi-calculator h2 {
+    font-size: 2rem;
+    color: #212529;
+    margin-bottom: 1rem;
+  }
+  
+  .bmi-calculator input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #95a5a6;
+    outline: none;
+    margin-bottom: 1rem;
+  }
+  
+  .bmi-calculator input::placeholder {
+    color: #7f8c8d;
+    font-size: 1.1rem;
+  }
+  
+  .bmi-calculator button {
+    width: 100%;
+    padding: 15px 0;
+    text-decoration: none;
+    background: #111;
+    color: #fff;
+    font-size: 1.1rem;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .bmi-calculator button:hover {
+    background: #222;
+  }
+  
+  .bmi-calculator #result {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+  }
+  
