@@ -6,7 +6,7 @@ var app = express();
 
 app.use(express.static('static'));
 
-mongoose.connect("mongodb://localhost/27017");
+mongoose.connect("mongodb://127.0.0.1/27017");
 
 app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({ extended: true }));
